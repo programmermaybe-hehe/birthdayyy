@@ -110,6 +110,23 @@ button{
 }
 @keyframes fade{to{opacity:1}}
 
+.finalImg{
+  width:160px;
+  border-radius:12px;
+  margin:10px;
+}
+
+.bouquet{
+  width:120px;
+  cursor:pointer;
+  animation: floatUp 2s infinite alternate;
+}
+
+#bouquetText{
+  color:#ffd1dc;
+  margin-top:10px;
+}
+
 .petal{
   position:fixed;
   top:-10px;
