@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Chiku</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" src="music/blue.mp3" loop></audio>
+
+<!-- Scene 1 -->
+<div id="scene1" class="scene">
+    <h1>HAPPY BIRTHDAYY CHIKUUUU ❤️</h1>
+    <p>Make a wish 🤗</p>
+    <div class="cake">
+        <div class="candle" id="candle" onclick="blow()"></div>
+    </div>
+    <p>Blow into the mic or tap the candle 🤗</p>
+</div>
+
+<!-- Scene 2 -->
+<div id="scene2" class="scene hidden">
+    <h1>Gift chahiye?? 🤭</h1>
+
+    <div class="choice">
+        <button onclick="showGift()">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+
+    <p id="forceText" class="hidden">Gift toh lena hi padega hehehe 😝😝</p>
+
+    <div class="gift hidden" onclick="openGift()"></div>
+    <img src="images/runner.png" id="runner">
+</div>
+
+<!-- Scene 3 -->
+<div id="scene3" class="scene hidden">
+    <h1>Best memories</h1>
+    <div class="gallery">
+        <img src="images/memory1.jpg">
+        <img src="images/memory2.jpg">
+        <img src="images/memory3.jpg">
+    </div>
+    <button onclick="nextScene()">Next</button>
+</div>
+
+<!-- Scene 4 -->
+<div id="scene4" class="scene hidden">
+    <h1 id="message"></h1>
+    <p id="irlGift" class="hidden">Asli gift mil jaayega jald hi 😭🤭</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
