@@ -1,6 +1,7 @@
 let music=document.getElementById("bgMusic");
 document.body.addEventListener("click",()=>music.play(),{once:true});
 
+/* Candle */
 let blown=false;
 function blow(){
   if(blown) return;
@@ -46,7 +47,6 @@ function hearts(){
 function showGift(){
   document.querySelector(".gift").classList.remove("hidden");
 }
-
 function openGift(){
   document.querySelector(".gift").classList.add("open");
   setTimeout(()=>{
@@ -63,7 +63,8 @@ function nextScene(){
 }
 
 /* Final message */
-let text="Happy Birthday Chikuuu… 🤍\nI hope this little space feels warm, just like you do.\nEven on the quiet days, you somehow make things feel lighter.\nI’m really glad you exist.\nAnd I hope this year gives you everything you’ve been wishing for.";
+let text="Happy Birthday Chikuuu… 🤍\nI hope this little space feels warm, just like you do.\nEven on the quiet days, you somehow make things feel lighter.\nI’m really glad you exist.\nAnd I hope this year gives you everything you’ve been wishing for.\nI hope today makes you smile a little more than usual.\nYou have no idea how special you are.\nStay just the way you are… always. You are the best!!!!!!";
+
 let i=0;
 
 function typeMessage(){
@@ -73,7 +74,12 @@ function typeMessage(){
     setTimeout(typeMessage,50);
   }else{
     irlGift.classList.remove("hidden");
+    setTimeout(()=>finalGifts.classList.remove("hidden"),1500);
   }
+}
+
+function showBouquet(){
+  bouquetText.classList.remove("hidden");
 }
 
 /* Sakura */
