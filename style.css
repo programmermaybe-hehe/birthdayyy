@@ -1,0 +1,133 @@
+body{
+  margin:0;
+  background:linear-gradient(#3a1c71,#5f2c82,#8e44ad);
+  color:white;
+  font-family:sans-serif;
+  text-align:center;
+  overflow:hidden;
+}
+
+.scene{
+  position:absolute;
+  width:100%;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.hidden{display:none}
+
+button{
+  padding:12px 25px;
+  border:none;
+  border-radius:20px;
+  font-size:18px;
+  background:#ffb7c5;
+  margin:10px;
+}
+
+.cake{
+  width:200px;
+  height:150px;
+  background:pink;
+  border-radius:20px;
+  position:relative;
+}
+
+.candle{
+  width:20px;
+  height:40px;
+  background:white;
+  position:absolute;
+  top:-40px;
+  left:90px;
+}
+
+.candle::after{
+  content:"";
+  width:10px;
+  height:15px;
+  background:orange;
+  border-radius:50%;
+  position:absolute;
+  top:-15px;
+  left:5px;
+  animation:flicker .2s infinite;
+}
+
+.blowed::after{display:none}
+@keyframes flicker{50%{opacity:.4}}
+
+.gift{
+  width:150px;
+  height:150px;
+  background:red;
+  border-radius:12px;
+}
+.open{animation:openGift 1s forwards}
+@keyframes openGift{
+  50%{transform:scale(1.2) rotate(5deg)}
+  100%{transform:scale(0)}
+}
+
+.gallery img{
+  width:200px;
+  margin:10px;
+  border-radius:10px;
+}
+
+#runner{
+  position:absolute;
+  bottom:40px;
+  left:-150px;
+  width:120px;
+  transition:1.2s;
+}
+.run{left:110%}
+
+.heart{
+  position:absolute;
+  color:pink;
+  animation:floatUp 1s forwards;
+}
+@keyframes floatUp{
+  to{transform:translateY(-60px);opacity:0}
+}
+
+#forceText{
+  color:#ffd1dc;
+  font-size:22px;
+}
+
+#irlGift{
+  margin-top:20px;
+  color:#ffd1dc;
+  font-size:22px;
+  opacity:0;
+  animation:fade 3s forwards;
+}
+@keyframes fade{to{opacity:1}}
+
+.petal{
+  position:fixed;
+  top:-10px;
+  font-size:20px;
+  animation: fall linear infinite;
+  color:#ffb7c5;
+}
+@keyframes fall{
+  to{transform:translateY(110vh) rotate(360deg);opacity:0;}
+}
+
+.snowflake{
+  position:fixed;
+  top:-10px;
+  color:white;
+  font-size:12px;
+  animation:snowFall linear infinite;
+}
+@keyframes snowFall{
+  to{transform:translateY(110vh);opacity:0;}
+}
