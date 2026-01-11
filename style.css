@@ -29,33 +29,56 @@ button{
 }
 
 .cake{
-  width:200px;
-  height:150px;
-  background:pink;
-  border-radius:20px;
   position:relative;
+  width:220px;
+  height:160px;
 }
 
+.cake::before{
+  content:"";
+  position:absolute;
+  bottom:0;
+  width:220px;
+  height:100px;
+  background:linear-gradient(#ffd1dc,#ff9aa2);
+  border-radius:20px 20px 30px 30px;
+}
+
+.cake::after{
+  content:"";
+  position:absolute;
+  top:40px;
+  width:220px;
+  height:50px;
+  background:linear-gradient(#fff,#ffd1dc);
+  border-radius:50%;
+  box-shadow:0 10px 0 #ffb7c5;
+}
+
+
 .candle{
-  width:20px;
+  width:10px;
   height:40px;
   background:white;
   position:absolute;
-  top:-40px;
-  left:90px;
+  top:-20px;
+  left:105px;
+  border-radius:5px;
 }
+
 
 .candle::after{
   content:"";
-  width:10px;
-  height:15px;
-  background:orange;
+  width:12px;
+  height:18px;
+  background:radial-gradient(circle, #fff, orange);
   border-radius:50%;
   position:absolute;
-  top:-15px;
-  left:5px;
-  animation:flicker .2s infinite;
+  top:-18px;
+  left:-1px;
+  animation:flicker 0.3s infinite;
 }
+
 
 .blowed::after{display:none}
 @keyframes flicker{50%{opacity:.4}}
