@@ -63,8 +63,7 @@ function nextScene(){
 }
 
 /* Final message */
-let text="Happy Birthday Chikuuu… 🤍\nI hope this little space feels warm, just like you do.\nEven on the quiet days, you somehow make things feel lighter.\nI’m really glad you exist.\nAnd I hope this year gives you everything you’ve been wishing for.\nI hope today makes you smile a little more than usual.\nYou have no idea how special you are.\nStay just the way you are… always. You are the best!!!!!!";
-
+let text="Happy Birthday to the sweetest boy! 🤍\nI hope today makes you smile a little more than usual.\nI hope this little space feels warm, just like you do.\nYou have no idea how special you are.\nEven on the quiet days, you somehow make things feel lighter.\nI’m really glad you exist.\nStay just the way you are… always.\nYOU ARE THE BEST!!!!!!";
 let i=0;
 
 function typeMessage(){
